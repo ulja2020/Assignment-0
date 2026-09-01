@@ -1,6 +1,14 @@
 def lists(list_of_lists):
     """ 
     This function prints the elements of each list in the list and the sum of numerical values in each list
+
+    Input
+    -----
+    list_of_lists (consists of several lists of numerical numbers and strings)
+
+    Output
+    -----
+    The sum of all numerical values from all lists in the list (ignoring strings)
     """
     total_sum = 0
 
@@ -22,6 +30,14 @@ def lists(list_of_lists):
 def dicts(dict_of_dicts):
     """
     Prints the elements of each dictionary in the dictionary and the sum of numerical values in each dictionary
+
+    Input
+    -----
+    dict_of_dicts (consists of two dicts of numerical numbers and strings)
+
+    Output
+    -----
+    The sum of all numerical values from all dicts in the dict (ignoring strings)
     """
     total_sum = 0
 
