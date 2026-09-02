@@ -3,10 +3,10 @@ def fridge_management(temperature, door_open):
     Decide the refrigerator power usage level from 0 to 3.
 
     Assumptions:
-    The function uses different temperatures inside the fridge provided as input
-    The door input can be "open" or "close"
-    The fridge uses more power when the temperature is higher, because it needs to cool more.
-    The fridge uses less power when the temperature is already cold.
+    The function uses a temperature inside the fridge provided as input (as a list of different temperatures)
+    The function uses fridge door condition provided as input. The door's conditions are either "open" or "close" (boolean values represents True = "open" and False = "close")
+    The fridge uses more power when the temperature is higher than 3, because it needs to cool more.
+    The fridge uses less power when the temperature is already cold. 
     When the door is open, power usage increases, because warm air enters the fridge.
     Power usage levels are assumed to be instantaneous power values, not cumulative.
 
