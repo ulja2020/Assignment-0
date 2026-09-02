@@ -3,8 +3,7 @@ def fridge_management(temperature, door_open):
     Decide the refrigerator power usage level from 0 to 3.
 
     Assumptions:
-    The normal target inside fridge temperature is around 4°C.
-    The room temperature is around 20°C.
+    The function uses different temperatures inside the fridge provided as input
     The door input can be "open" or "close"
     The fridge uses more power when the temperature is higher, because it needs to cool more.
     The fridge uses less power when the temperature is already cold.
