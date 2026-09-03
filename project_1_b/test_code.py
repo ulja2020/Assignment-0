@@ -12,7 +12,7 @@ assert fridge_management(5, True) == 3
 print("Fridge management tests passed!")
 
 
-# Test total power usage function (using arbitrary values of power)
+# Test total power usage function (using arbitrary values of instantenious power)
 
 power_values = [0, 1, 2, 3, 2, 1]
 
