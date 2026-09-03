@@ -4,7 +4,9 @@ def fridge_management(temperature, door_open):
 
     Assumptions:
     The function uses a temperature inside the fridge provided as input (as a list of different temperatures)
-    The function uses fridge door condition provided as input. The door's conditions are either "open" or "close" (boolean values represents True = "open" and False = "close")
+    The function uses fridge door condition provided as input. 
+    The door condition is represented as a Boolean, where True means "open" and False means "closed".
+    The threshold is 3 degrees Celsius inside the fridge.
     The fridge uses more power when the temperature is higher than 3, because it needs to cool more.
     The fridge uses less power when the temperature is already cold. 
     When the door is open, power usage increases, because warm air enters the fridge.
