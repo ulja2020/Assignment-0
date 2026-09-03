@@ -1,1 +1,1 @@
-The assignment is done by Uliana Kulebyakina (student number 269017)
+The assignment is done by Uliana Kulebyakina (student number: 269017)
