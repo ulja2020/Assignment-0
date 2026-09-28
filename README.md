@@ -327,6 +327,7 @@ To find a genuine distance between distributions we can use following distance/p
 
 - Euclidean distance
 
+$$
 \left[
 \sum_{k=1}^{N}
 (x_{ik}-x_{jk})^2
