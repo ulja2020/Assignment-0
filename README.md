@@ -224,27 +224,27 @@ Gives us 3 yes/no questions, and it means the uncertainty is roughly equivalent 
 For 25 bins the theoretical maximum becomes,
 
 $$
-\log_2(25) = 4.32
+\log_2(25) = 4.64
 $$
 
-And if we compare the theoretical maximum entropy with one of our features (f.ex. `ear_length_cm` = 4.1169), we see that 4.1169 < 4.32, so that means our distribution has less uncertainty than the maximum possible uncertainty for 20 bins (the maximum entropy/uncertainty can be achieved only when all 20 bins are equally likely). So, the number we computed makes sense.
+And if we compare the theoretical maximum entropy with one of our features (f.ex. `ear_length_cm` = 4.1169), we see that 4.1169 < 4.64, so that means our distribution has less uncertainty than the maximum possible uncertainty for 25 bins (the maximum entropy/uncertainty can be achieved only when all 25 bins are equally likely). So, the number we computed makes sense.
 
 4) I we run "code.py", one of the parts we get in terminal is following:
 
 Feature: ear_length_cm
-Number of bins: 20
+Number of bins: 25
 
 Original:
   Standard deviation: 2.0191
-  Entropy:            3.7867 bits
+  Entropy:            4.1169 bits
 
 After multiplying by 1000:
   Standard deviation: 2019.1411
-  Entropy:            3.7867 bits
+  Entropy:            4.1169 bits
 
 After adding 50:
   Standard deviation: 2.0191
-  Entropy:            3.7867 bits
+  Entropy:            4.1169 bits
 
 Thus, we observe that std is sensitive to scale (it changes dramatically from 2.0191 to 2019.1411), but if we simply move everything (x -> x + 50), then std doesn't change.
 So standard deviation tells us about physical/numerical spread.
