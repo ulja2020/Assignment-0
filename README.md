@@ -213,7 +213,8 @@ $$
 H = -\sum_{i=1}^{n} p_i \log_2(p_i)
 $$
 
-So, 
+So,
+
 $$
 \log_2(8) = 3
 $$
@@ -221,6 +222,7 @@ $$
 Gives us 3 yes/no questions, and it means the uncertainty is roughly equivalent to needing 3 binary decisions on average to identify the next bin, depending on the probability distribution.
 
 For 20 bins,
+
 $$
 \log_2(20) = 4.32 bits (which is the theoretical maximum entropy)
 $$
