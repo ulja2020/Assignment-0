@@ -221,13 +221,13 @@ $$
 
 Gives us 3 yes/no questions, and it means the uncertainty is roughly equivalent to needing 3 binary decisions on average to identify the next bin, depending on the probability distribution.
 
-For 20 bins,
+For 25 bins the theoretical maximum becomes,
 
 $$
-\log_2(20) = 4.32 bits (which is the theoretical maximum entropy)
+\log_2(25) = 4.32
 $$
 
-And if we compare the theoretical maximum entropy with one of our features (f.ex. `ear_length_cm` = 3.7867), we see that 3.7867 < 4.32, so that means our distribution has less uncertainty than the maximum possible uncertainty for 20 bins (the maximum entropy/uncertainty can be achieved only when all 20 bins are equally likely). So, the number we computed makes sense.
+And if we compare the theoretical maximum entropy with one of our features (f.ex. `ear_length_cm` = 4.1169), we see that 4.1169 < 4.32, so that means our distribution has less uncertainty than the maximum possible uncertainty for 20 bins (the maximum entropy/uncertainty can be achieved only when all 20 bins are equally likely). So, the number we computed makes sense.
 
 4) I we run "code.py", one of the parts we get in terminal is following:
 
