@@ -126,7 +126,7 @@ Using the same number of bins makes the distributions comparable between feature
 The bin count is explicitly defined in `code.py` as:
 
 ```python
-NUMBER_OF_BINS = 20
+NUMBER_OF_BINS = 25
 ```
 
 ### Probability density function
