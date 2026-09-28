@@ -158,8 +158,6 @@ The main examples in this dataset are:
 
 Shannon entropy is calculated from the histogram probabilities using base-2 logarithms, so the result is expressed in **bits**.
 
-A probability of zero is ignored in the calculation because the mathematical term `p log2(p)` has a limiting value of zero when `p = 0`.
-
 The entropy calculation depends on the chosen number of histogram bins. Therefore, the same binning approach is used consistently when comparing features.
 
 ### Visualisations
