@@ -119,7 +119,7 @@ The following calculations are performed for every numerical feature:
 
 ### Histogram bin choice
 
-A fixed value of **20 bins** is used for the histogram-based PDF, CDF, and entropy calculations.
+A fixed value of **25 bins** is used for the histogram-based PDF, CDF, and entropy calculations.
 
 Using the same number of bins makes the distributions comparable between features and also provides a consistent basis for later entropy and KL-divergence calculations.
 
