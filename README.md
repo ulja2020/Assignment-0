@@ -185,6 +185,16 @@ All numerical axes include appropriate units where applicable.
 
 1) In summary statistics, we got following entropy_bits and standard deviation:
 
+| feature                   | std         | entropy bits  |
+| ------------------------- | ----------- | ------------- |
+| `plant_height_cm`         | 18.3428     | 3.8728        |
+| `leaf_damage_percent`     | 3.2966      | 2.7251        |
+| `moisture_sensor_percent` | 0.0050      | 4.0754        |
+| `ear_length_cm`           | 2.0191      | 4.1169        |
+| `grain_mass_per_ear_g`    | 20.1209     | 4.1015        |
+
+
+
     /feature                    /entropy_bits            /std
 plant_height_cm                     3.5661              18.3428
 leaf_damage_percent                 2.4271              3.2966
