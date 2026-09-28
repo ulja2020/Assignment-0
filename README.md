@@ -194,15 +194,7 @@ All numerical axes include appropriate units where applicable.
 | `grain_mass_per_ear_g`    | 20.1209     | 4.1015        |
 
 
-
-    /feature                    /entropy_bits            /std
-plant_height_cm                     3.5661              18.3428
-leaf_damage_percent                 2.4271              3.2966
-moisture_sensor_percent             3.7224              0.0050
-ear_length_cm                       3.7867              2.0191
-grain_mass_per_ear_g                3.7919              20.1209
-
-If we compare the almost constant feature (`moisture_sensor_percent`) and the widest feature (`grain_mass_per_ear_g`) we see that despite std of `moisture_sensor_percent` (0.0050) is so different compared to `grain_mass_per_ear_g` (20.1209), their entropy bits are very close (3.7224 and 3.7919). This happens because entropy calculation is based on the probabilities of observations falling into histogram bins, so entropy and std measure different things:
+If we compare the almost constant feature (`moisture_sensor_percent`) and the widest feature (`grain_mass_per_ear_g`) we see that despite std of `moisture_sensor_percent` (0.0050) is so different compared to `grain_mass_per_ear_g` (20.1209), their entropy bits are very close (4.0754 and 4.1015). This happens because entropy calculation is based on the probabilities of observations falling into histogram bins, so entropy and std measure different things:
 
 - Entropy measures uncertainty in which bin an observation will fall into, given the chosen binning.
 
