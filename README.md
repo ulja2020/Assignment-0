@@ -181,7 +181,7 @@ All numerical axes include appropriate units where applicable.
 
 
 
-## Task 5 — What is entropy good for? (WRITTEN without AI generated text)
+## Task 5 — What is entropy good for?
 
 1) In summary statistics, we got following entropy_bits and standard deviation:
 
@@ -234,17 +234,19 @@ And if we compare the theoretical maximum entropy with one of our features (f.ex
 Feature: ear_length_cm
 Number of bins: 25
 
-Original:
-  Standard deviation: 2.0191
-  Entropy:            4.1169 bits
 
-After multiplying by 1000:
-  Standard deviation: 2019.1411
-  Entropy:            4.1169 bits
-
-After adding 50:
-  Standard deviation: 2.0191
-  Entropy:            4.1169 bits
+ ------------------------ ------------------------------------------------
+ |   Original             |            Standard deviation: 2.0191        |
+ |                        |                       Entropy: 4.1169 bits   |
+ ------------------------ ------------------------------------------------ 
+ ------------------------ ------------------------------------------------
+ | After multiplying by 1000  |        Standard deviation: 2019.1411     |
+ |                            |                   Entropy: 4.1169 bits   | 
+ ------------------------ ------------------------------------------------   
+ ------------------------ ------------------------------------------------
+ | After adding 50            |        Standard deviation: 2.0191        |
+ |                            |                   Entropy: 4.1169 bits   | 
+ ------------------------ ------------------------------------------------   
 
 Thus, we observe that std is sensitive to scale (it changes dramatically from 2.0191 to 2019.1411), but if we simply move everything (x -> x + 50), then std doesn't change.
 So standard deviation tells us about physical/numerical spread.
