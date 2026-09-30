@@ -272,13 +272,13 @@ If your feature looks very Gaussian, its KL divergence from the matching Gaussia
 If we run updated code.py, we get this table:
 
 KL divergence:
-                feature  KL_P_to_Q_bits  KL_Q_to_P_bits
-        plant_height_cm        0.027771             inf
-    leaf_damage_percent        0.530558             inf
-moisture_sensor_percent        0.118470        0.124832
-          ear_length_cm        0.019500        0.018875
-   grain_mass_per_ear_g        0.033149             inf
-
+               | Feature | KL(P‖Q) (bits) | KL(Q‖P) (bits) |
+|---|---:|---:|
+| **plant_height_cm** | 0.034685 | ∞ |
+| **leaf_damage_percent** | 0.551120 | ∞ |
+| **moisture_sensor_percent** | 0.078830 | 0.072575 |
+| **ear_length_cm** | 0.020503 | 0.021184 |
+| **grain_mass_per_ear_g** | 0.053493 | ∞ |
 
 Therefore, your smallest values are:
     - `ear_length_cm`: 0.0195
