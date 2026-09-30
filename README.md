@@ -253,19 +253,21 @@ While entropy, on the other hand, doesn't care about the absolute measurement sc
 
 5) To find out which 2 features are reasonable to keep, we can create a correlation matrix in code.py:
 
-                   /plant_height_cm/leaf_damage_percent/moisture_sensor_percent/ear_length_cm /grain_mass_per_ear_g
-plant_height_cm            1.000               -0.019                    0.027          0.064                 0.154
-leaf_damage_percen        -0.019                1.000                   -0.054         -0.020                -0.180
-moisture_sensor_percent    0.027               -0.054                    1.000         -0.036                -0.016
-ear_length_cm              0.064               -0.020                   -0.036          1.000                 0.857
-grain_mass_per_ear_g       0.154               -0.180                   -0.016          0.857                 1.000
+| Variable                    | plant_height_cm | leaf_damage_percent | moisture_sensor_percent | ear_length_cm | grain_mass_per_ear_g |
+| --------------------------- | --------------: | ------------------: | ----------------------: | ------------: | -------------------: |
+| **plant_height_cm**         |           1.000 |              -0.019 |                   0.027 |         0.064 |                0.154 |
+| **leaf_damage_percent**     |          -0.019 |               1.000 |                  -0.054 |        -0.020 |               -0.180 |
+| **moisture_sensor_percent** |           0.027 |              -0.054 |                   1.000 |        -0.036 |               -0.016 |
+| **ear_length_cm**           |           0.064 |              -0.020 |                  -0.036 |         1.000 |                0.857 |
+| **grain_mass_per_ear_g**    |           0.154 |              -0.180 |                  -0.016 |         0.857 |                1.000 |
 
-Entropy of each feature:
-  plant_height_cm: 3.5661 bits
-  leaf_damage_percent: 2.4271 bits
-  moisture_sensor_percent: 3.7224 bits
-  ear_length_cm: 3.7867 bits
-  grain_mass_per_ear_g: 3.7919 bits
+**Entropy of each feature:**
+
+plant_height_cm: 3.8728 bits  
+leaf_damage_percent: 2.7251 bits  
+moisture_sensor_percent: 4.0754 bits  
+ear_length_cm: 4.1169 bits  
+grain_mass_per_ear_g: 4.1015 bits
 
 We would keep `ear_length_cm` and `leaf_damage_percent`. Ear length has high entropy and a strong relationship with grain mass, while leaf damage provides different information about plant condition. I would not choose the moisture sensor because its standard deviation is extremely small, indicating that it is almost constant. I also would not automatically choose grain mass together with ear length, because their correlation is high (r ≈ 0.857), meaning that the two features contain overlapping information. Therefore, entropy alone is not sufficient for feature selection; correlation and the meaning of the features also need to be considered.
 
