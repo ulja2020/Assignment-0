@@ -287,6 +287,8 @@ Therefore, your smallest values are:
 
 These distributions are quite similar to their matching Gaussian distributions. This makes sense because their skewness values are -0.0215, -0.1163, and -0.1277. These values are close to zero, which means that the three features are fairly symmetric. However, being symmetric does not automatically mean that a distribution is Gaussian. It only tells us that the distribution is not strongly skewed.
 
+Among the three features, `ear_length_cm` appears to be the most Gaussian. It has the smallest KL divergence (0.020503), meaning that its distribution is the closest to the matching Gaussian distribution. Its skewness is also closest to zero (-0.0215), indicating that it is fairly symmetric. `plant_height_cm` comes next, while `grain_mass_per_ear_g` has the largest KL divergence of the three.
+
 Now, let's look at `leaf_damage_percent`. This feature has a much larger KL divergence than the other finite values. We also know that its skewness is 3.1657, which means that the distribution is strongly skewed and not very symmetric. This suggests that it does not have the typical bell shape of a Gaussian distribution. Therefore, the large KL divergence makes sense because the `leaf_damage_percent` distribution is quite different from a Gaussian distribution.
 
 The interesting thing happens when we handle zeros q_i = 0 and p_i > 0. We have chosen to use Kullback–Leibler (KL) divergence formula:
