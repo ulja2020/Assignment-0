@@ -281,9 +281,9 @@ KL divergence:
 | **grain_mass_per_ear_g** | 0.053493 | ∞ |
 
 Therefore, your smallest values are:
-- `ear_length_cm`: 0.0195
-- `plant_height_cm`: 0.0278
-- `grain_mass_per_ear_g`: 0.0331
+- `ear_length_cm`: 0.020503
+- `plant_height_cm`: 0.034685
+- `grain_mass_per_ear_g`: 0.053493
 
 These distributions are quite similar to their matching Gaussian distributions. This makes sense because their skewness values are -0.0215, -0.1163, and -0.1277. These values are close to zero, which means that the three features are fairly symmetric. However, being symmetric does not automatically mean that a distribution is Gaussian. It only tells us that the distribution is not strongly skewed.
 
