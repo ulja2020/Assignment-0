@@ -281,13 +281,13 @@ KL divergence:
 | **grain_mass_per_ear_g** | 0.053493 | ∞ |
 
 Therefore, your smallest values are:
-    - `ear_length_cm`: 0.0195
-    - `plant_height_cm`: 0.0278
-    - `grain_mass_per_ear_g`: 0.0331
+- `ear_length_cm`: 0.0195
+- `plant_height_cm`: 0.0278
+- `grain_mass_per_ear_g`: 0.0331
 
-These distributions are relatively close to their matching Gaussian distributions. That makes sense because we already saw that their skewness are -0.00215, -0.1163 and -0.1277, so it means that all three features are fairly symmetric (something that means they are Gaussian).
+These distributions are quite similar to their matching Gaussian distributions. This makes sense because their skewness values are -0.0215, -0.1163, and -0.1277. These values are close to zero, which means that the three features are fairly symmetric. However, being symmetric does not automatically mean that a distribution is Gaussian. It only tells us that the distribution is not strongly skewed.
 
-Now, let's look at `leaf_damage_percent`. This feature has a much larger KL divergence than the other finite values. And we already know that its skewness = 3.1657, so it means that it's not shaped like a Gaussian bell curve. So we can conclude that our KL divergence managed to detect that the leaf-damage distribution is substantially different from a Gaussian distribution, which is correct.
+Now, let's look at `leaf_damage_percent`. This feature has a much larger KL divergence than the other finite values. We also know that its skewness is 3.1657, which means that the distribution is strongly skewed and not very symmetric. This suggests that it does not have the typical bell shape of a Gaussian distribution. Therefore, the large KL divergence makes sense because the `leaf_damage_percent` distribution is quite different from a Gaussian distribution.
 
 The interesting thing happens when we handle zeros q_i = 0 and p_i > 0. We have chosen to use Kullback–Leibler (KL) divergence formula:
 
