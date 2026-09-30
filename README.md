@@ -292,9 +292,7 @@ Now, let's look at `leaf_damage_percent`. This feature has a much larger KL dive
 The interesting thing happens when we handle zeros q_i = 0 and p_i > 0. We have chosen to use Kullback–Leibler (KL) divergence formula:
 
 $$
-D_{KL}(P\parallel Q)
-=
-\sum_i p_i \log_2\left(\frac{p_i}{q_i}\right)
+D_{KL}(P\parallel Q) = \sum_i p_i \log_2\left(\frac{p_i}{q_i}\right)
 $$
 
 So the KL divergence is measured in bits.
