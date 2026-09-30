@@ -267,7 +267,7 @@ We would keep `ear_length_cm` and `leaf_damage_percent`. Ear length has high ent
 
 ## Task 6 Kullback-Leibler divergence
 
-If your feature looks very Gaussian, its KL divergence from the matching Gaussian should be relatively small. If it looks very different from a Gaussian, the KL divergence should be larger. 
+If a feature's distribution is very similar to a Gaussian distribution, its KL divergence from the matching Gaussian should be relatively small. If the feature's distribution is very different from the Gaussian, its KL divergence should be larger.
 
 If we run updated code.py, we get this table:
 
@@ -301,6 +301,8 @@ the KL divergence is infinite.
 
 ## Task 7 Is KL a distance?
 
+KL divergence can be used to measure how different two probability distributions are, but technically it is not a distance metric.
+
 KL divergence satisfies following properties:
 
 - Non-negative (A distance should always be zero or positive)
@@ -316,7 +318,7 @@ KL divergence doesn't satisfy following properties:
 
 So, KL is a divergence, as it is assymetric, and KL is not a metric.
 
-KL is not the right choice if our goal is to find a distance between two distributions, but if we just want to know how different is our observed distribution \(P\) from a Gaussian reference distribution \(Q\).
+KL is not the right choice if our goal is to find a distance between two distributions, but if we just want to know how different is our observed distribution \(P\) from a Gaussian reference distribution \(Q\), then KL is the right choice.
 
 
 To find a genuine distance between distributions we can use following distance/proximity techniques:
