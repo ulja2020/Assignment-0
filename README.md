@@ -234,17 +234,11 @@ And if we compare the theoretical maximum entropy with one of our features (f.ex
 Feature: ear_length_cm
 Number of bins: 25
 
-
- ------------------------ ------------------------------------------------
- |   Original             |            Standard deviation: 2.0191        |
- |                        |                       Entropy: 4.1169 bits   |
- ------------------------ ------------------------------------------------ 
- | After multiplying by 1000  |        Standard deviation: 2019.1411     |
- |                            |                   Entropy: 4.1169 bits   | 
- ------------------------ ------------------------------------------------   
- | After adding 50            |        Standard deviation: 2.0191        |
- |                            |                   Entropy: 4.1169 bits   | 
- ------------------------ ------------------------------------------------   
+| Transformation | Standard deviation | Entropy |
+|---|---:|---:|
+| **Original** | 2.0191 | 4.1169 bits |
+| **After multiplying by 1000** | 2019.1411 | 4.1169 bits |
+| **After adding 50** | 2.0191 | 4.1169 bits |  
 
 Thus, we observe that std is sensitive to scale (it changes dramatically from 2.0191 to 2019.1411), but if we simply move everything (x -> x + 50), then std doesn't change.
 So standard deviation tells us about physical/numerical spread.
