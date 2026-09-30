@@ -1,6 +1,6 @@
 # Project 2 — Data Generation and Distribution Analysis 
 
-## Project overview
+## Project overview 
 
 This project develops a reusable Python workflow for generating, checking, analysing, visualising, and later modelling numerical data.
 
