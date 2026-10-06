@@ -1,0 +1,11 @@
+{
+  "source": "FAOSTAT Suite of Food Security Indicators",
+  "dataset_page": "https://data.fao.org/catalog/dataset/955d6564-40a9-48b4-b51b-f19d65bb3539",
+  "source_url": "https://bulks-faostat.fao.org/production/Food_Security_Data_E_All_Data_(Normalized).zip",
+  "license": "CC BY 4.0",
+  "input_file": "FAOSTAT_food_security_raw.csv",
+  "input_rows": 28927,
+  "input_columns": 15,
+  "note": "The CSV was supplied by the student. The original download timestamp is not available in the file metadata; this record documents when the cached copy was prepared for the project.",
+  "recorded_at": "2026-10-04T09:56:26.139184+00:00"
+}
